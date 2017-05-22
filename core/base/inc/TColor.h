@@ -95,6 +95,8 @@ public:
    static Bool_t  IsGrayscale();
    static void    SetGrayscale(Bool_t set = kTRUE);
    static void    SetPalette(Int_t ncolors, Int_t *colors,Float_t alpha=1.);
+	/// Invert the current color palette.
+   static void    InvertPalette();
 
    ClassDef(TColor,2)  //Color defined by RGB or HLS
 };

@@ -3016,3 +3016,7 @@ void TColor::SetPalette(Int_t ncolors, Int_t *colors, Float_t alpha)
    paletteType = 3;
 }
 
+void TColor::InvertPalette()
+{
+   std::reverse(fgPalette.fArray, fgPalette.fArray + fgPalette.GetSize());
+}
